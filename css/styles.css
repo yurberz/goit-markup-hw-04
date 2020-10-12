@@ -1,0 +1,487 @@
+/* Основной цвет текста #212121; */
+/* Вторичный цвет текста #757575; */
+/* Белый #FFFFFF; */
+/* Цвет акцента #2196F3; */
+/* Вторичный цвет фона #2f303a; */
+/* Вторичный цвет фона страницы Портфолио #f5f4fa; */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --portfolio-secondary-bg-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--primary-background-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.card-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Стили страницы Студия */
+
+/* Шапка страницы */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+}
+
+.main-header .nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Логотип */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #000000;
+}
+
+.logo-custom {
+  color: var(--accent-color);
+}
+
+/* Навигация сайта */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.studio-page:hover,
+.studio-page:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .studio-page.current {
+  color: var(--accent-color);
+}
+
+.portfolio-page:hover,
+.portfolio-page:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .portfolio-page.current {
+  color: var(--accent-color);
+}
+
+.contacts-page:hover,
+.contacts-page:focus {
+  color: var(--accent-color);
+}
+
+/* Контакты шапки */
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts .item + .item {
+  margin-left: 50px;
+}
+
+.header-contacts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+.email:hover,
+.email:focus {
+  color: var(--accent-color);
+}
+
+.phone:hover,
+.phone:focus {
+  color: var(--accent-color);
+}
+
+/* Секция-герой */
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
+  background-color: var(--secondary-background-color);
+}
+
+.hero-section .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Кнопка Секция-герой */
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Секция Особенности */
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.features-section h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.features-section p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list .features-item {
+  width: calc ((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+}
+
+.features-list .features-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+/*  Секция Чем мы занимаемся */
+.ourwork-section {
+  padding-bottom: 94px;
+}
+
+.ourwork-section .ourwork-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.ourwork-list {
+  display: flex;
+}
+
+.ourwork-list .ourwork-item {
+  width: calc ((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+}
+
+.ourwork-list .ourwork-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+/* Секция Наша команда */
+.ourteam-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+
+.ourteam-section .ourteam-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.ourteam-section h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--primary-text-color);
+}
+
+.ourteam-section p {
+  margin: 0px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--secondary-text-color);
+}
+
+.ourteam-section .ourteam-item {
+  padding-bottom: 30px;
+}
+
+.ourteam-list {
+  display: flex;
+}
+
+.ourteam-list .ourteam-item {
+  width: calc ((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ourteam-list .ourteam-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.ourteam-list .ourteam-item:nth-last-child(-n + 4) {
+  margin-bottom: 0px;
+}
+
+.ourteam-list .card {
+  text-align: center;
+}
+
+/*  Подвал страницы */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--secondary-background-color);
+}
+
+/* Подвал страницы логотип */
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+/* Подвал страницы адрес */
+.adress-footer p {
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
+
+.adress-footer {
+  display: flex;
+  flex-direction: column;
+
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.adress-footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-footer .email {
+  margin-bottom: 9px;
+}
+
+/* Стили страницы Портфолио */
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Секция Фильтр */
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.filter .filter-item + .filter-item {
+  margin-left: 8px;
+}
+
+.filter-button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+
+  background-color: #f5f4fa;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.filter-button:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+/* Секция работ */
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works h2 {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works p {
+  margin: 0px;
+
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.works .works-item {
+  width: calc ((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.works .works-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.works .works-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.works .card {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  background: #ffffff;
+}
