@@ -153,11 +153,19 @@ a {
 
 /* Секция-герой */
 .hero-section {
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
 
-  background-color: var(--secondary-background-color);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+    url("../img/hero-img-1.jpg");
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
 }
 
 .hero-section .hero-title {
@@ -230,12 +238,36 @@ a {
   display: flex;
 }
 
-.features-list .features-item {
+.features-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.features-item:nth-child(1)::before {
+  background-image: url("../img/feature-icon-1.svg");
+}
+
+.features-item:nth-child(2)::before {
+  background-image: url("../img/feature-icon-2.svg");
+}
+
+.features-item:nth-child(3)::before {
+  background-image: url("../img/feature-icon-3.svg");
+}
+
+.features-item:nth-child(4)::before {
+  background-image: url("../img/feature-icon-4.svg");
+}
+
+.features-item {
   width: calc ((100% - 3 * 30px) / 4);
   margin-right: 30px;
 }
 
-.features-list .features-item:nth-child(4n) {
+.features-item:nth-child(4n) {
   margin-right: 0px;
 }
 
@@ -260,12 +292,12 @@ a {
   display: flex;
 }
 
-.ourwork-list .ourwork-item {
+.ourwork-item {
   width: calc ((100% - 2 * 30px) / 3);
   margin-right: 30px;
 }
 
-.ourwork-list .ourwork-item:nth-child(3n) {
+.ourwork-item:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -318,7 +350,7 @@ a {
   display: flex;
 }
 
-.ourteam-list .ourteam-item {
+.ourteam-item {
   width: calc ((100% - 3 * 30px) / 4);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -330,11 +362,11 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.ourteam-list .ourteam-item:nth-child(4n) {
+.ourteam-item:nth-child(4n) {
   margin-right: 0px;
 }
 
-.ourteam-list .ourteam-item:nth-last-child(-n + 4) {
+.ourteam-item:nth-last-child(-n + 4) {
   margin-bottom: 0px;
 }
 
@@ -459,18 +491,23 @@ a {
   line-height: 1.87;
 }
 
-.works .works-item {
+.works-item {
   width: calc ((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.works .works-item:nth-child(3n) {
+.works-item:nth-child(3n) {
   margin-right: 0px;
 }
 
-.works .works-item:nth-last-child(-n + 3) {
+.works-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+
+.works-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .works .card {
