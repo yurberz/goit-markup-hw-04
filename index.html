@@ -17,7 +17,7 @@
   <body>
     <!-- шапка-страницы -->
     <header class="page-header">
-      <div class="main-header container">
+      <div class="container top-line">
         <nav class="nav">
           <!-- логотип -->
           <a href="./index.html" class="logo" aria-label="логотип"><span class="logo-custom">Web</span>Studio</a>
@@ -55,21 +55,26 @@
     <main>
       <!-- секция-герой -->
      <section class="hero-section">
-        <h1 class="hero-title">
-          Эффективные решения<br />
-          для вашего бизнеса
-        </h1>
-      
-        <a href="" class="button">Заказать услугу</a>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Эффективные решения 
+            для вашего бизнеса
+          </h1>
+
+          <button class="button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- секция-особенности -->
-      <section class="features-section">
+      <section class="default-section features-section">
         <div class="container">
           <h2 class="features-title">Особенности</h2>
 
           <ul class="list features-list">
             <li class="features-item">
+              <svg class="features-icon">
+                <use href="./img/icomoon/sprite.svg#feature-1"></use>
+              </svg>
               <h3>Внимание к деталям</h3>
 
               <p>
@@ -79,6 +84,9 @@
             </li>
 
             <li class="features-item">
+              <svg class="features-icon">
+                <use href="./img/icomoon/sprite.svg#feature-2"></use>
+              </svg>
               <h3>Пунктуальность</h3>
 
               <p>
@@ -88,6 +96,9 @@
             </li>
 
             <li class="features-item">
+              <svg class="features-icon">
+                <use href="./img/icomoon/sprite.svg#feature-3"></use>
+              </svg>
               <h3>Планирование</h3>
 
               <p>
@@ -97,6 +108,9 @@
             </li>
 
             <li class="features-item">
+              <svg class="features-icon">
+                <use href="./img/icomoon/sprite.svg#feature-4"></use>
+              </svg>
               <h3>Современные технологии</h3>
 
               <p>
@@ -124,7 +138,7 @@
       </section>
 
       <!-- секция-наша-команда -->
-      <section class="ourteam-section">
+      <section class="default-section ourteam-section">
         <div class="container">
           <h2 class="ourteam-title">Наша команда</h2>
 
@@ -132,24 +146,35 @@
             <li class="ourteam-item">
               <img class="card-image" src="./img/igor.jpg" alt="фото Игоря" width="270" />
 
-              <div class="card"><h3>Игорь Демьяненко</h3>
+              <div class="card">
+                <h3>Игорь Демьяненко</h3>
               
               <p lang="en">Product Designer</p></div>
 
               <ul class="list icon-list">
                 <li class="icon-item">
                 <a class="icon-button instagram-icon" href="http://instagram.com" target="_blank">
-                  <img src="./img/instagram-icon.svg" alt="">
-                </a>
+                <svg class="logo" width=20 height=20>
+                  <use href="./img/icomoon/sprite.svg#instagram-icon"></use>
+                </svg></a>
                 </li>
                 <li class="list icon-item">
-                  <a class="icon-button twitter-icon" href="http://twitter.com" target="_blank"></a>
+                  <a class="icon-button twitter-icon" href="http://twitter.com" target="_blank">
+                  <svg class="logo" width=20 height=20>
+                    <use href="./img/icomoon/sprite.svg#twitter-icon"></use>
+                  </svg></a>
                 </li>
                 <li class="list icon-item">
-                  <a class="icon-button facebook-icon" href="http://facebook.com" target="_blank"></a>
+                  <a class="icon-button facebook-icon" href="http://facebook.com" target="_blank">
+                  <svg class="logo" width=20 height=20>
+                    <use href="./img/icomoon/sprite.svg#facebook-icon"></use>
+                  </svg></a>
                 </li>
-                <li class="list icon-item">
-                  <a class="icon-button linkedin-icon" href="http://linkedin.com" target="_blank"></a>
+                <li class="icon-item">
+                  <a class="icon-button linkedin-icon" href="http://linkedin.com" target="_blank">
+                  <svg class="logo" width=20 height=20>
+                    <use href="./img/icomoon/sprite.svg#linkedin-icon"></use>
+                  </svg></a>
                 </li>
               </ul>
             </li>
@@ -157,25 +182,161 @@
             <li class="ourteam-item">
               <img class="card-image" src="./img/olga.jpg" alt="фото Ольги" width="270" />
 
-              <div class="card"><h3>Ольга Репина</h3>
+              <div class="card">
+                <h3>Ольга Репина</h3>
               
               <p lang="en">Frontend Developer</p></div>
+
+              <ul class="list icon-list">
+                <li class="icon-item">
+                  <a class="icon-button instagram-icon" href="http://instagram.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#instagram-icon"></use>
+                    </svg></a>
+                </li>
+                <li class="list icon-item">
+                  <a class="icon-button twitter-icon" href="http://twitter.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#twitter-icon"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-item">
+                  <a class="icon-button facebook-icon" href="http://facebook.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#facebook-icon"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-item">
+                  <a class="icon-button linkedin-icon" href="http://linkedin.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#linkedin-icon"></use>
+                    </svg></a>
+                </li>
+              </ul>
             </li>
 
             <li class="ourteam-item">
               <img class="card-image" src="./img/nikolay.jpg" alt="фото Николая" width="270" />
 
-              <div class="card"><h3>Николай Тарасов</h3>
+              <div class="card">
+                <h3>Николай Тарасов</h3>
               
               <p lang="en">Marketing</p></div>
+
+              <ul class="list icon-list">
+                <li class="icon-item">
+                  <a class="icon-button instagram-icon" href="http://instagram.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#instagram-icon"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-item">
+                  <a class="icon-button twitter-icon" href="http://twitter.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#twitter-icon"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-item">
+                  <a class="icon-button facebook-icon" href="http://facebook.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#facebook-icon"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-item">
+                  <a class="icon-button linkedin-icon" href="http://linkedin.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#linkedin-icon"></use>
+                    </svg></a>
+                </li>
+              </ul>
             </li>
 
             <li class="ourteam-item">
               <img class="card-image" src="./img/mihail.jpg" alt="фото Михаила" width="270" />
 
-              <div class="card"><h3>Михаил Ермаков</h3>
+              <div class="card">
+                <h3>Михаил Ермаков</h3>
               
               <p lang="en">UI Designer</p></div>
+
+              <ul class="list icon-list">
+                <li class="icon-item">
+                  <a class="icon-button instagram-icon" href="http://instagram.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#instagram-icon"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-item">
+                  <a class="icon-button twitter-icon" href="http://twitter.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#twitter-icon"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-item">
+                  <a class="icon-button facebook-icon" href="http://facebook.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#facebook-icon"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-item">
+                  <a class="icon-button linkedin-icon" href="http://linkedin.com" target="_blank">
+                    <svg class="logo" width=20 height=20>
+                      <use href="./img/icomoon/sprite.svg#linkedin-icon"></use>
+                    </svg></a>
+                </li>
+              </ul>
+            </li>
+           </ul>
+        </div>
+      </section>
+
+      <!-- секция-постоянные-клиенты -->
+      <section class="default-section clients-section">
+        <div class="container">
+          <h2 class="clients-title">Постоянные клиенты</h2>
+
+          <ul class="list clients-list">
+            <li class="clients-item">
+              <a class="clients-logo" href="">
+              <svg class="icon" width="44.27" height="49.23">
+                <use href="./img/icomoon/sprite.svg#client-logo-1"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-logo" href="">
+              <svg class="icon" width="40" height="52">
+                <use href="./img/icomoon/sprite.svg#client-logo-2"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-logo" href="">
+              <svg class="icon" width="41" height="42.6">
+                <use href="./img/icomoon/sprite.svg#client-logo-3"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-logo" href="">
+              <svg class="icon" width="79.66" height="42.02">
+                <use href="./img/icomoon/sprite.svg#client-logo-4"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-logo" href="">
+               <svg class="icon" width="59" height="47">
+                 <use href="./img/icomoon/sprite.svg#client-logo-5"></use>
+               </svg> 
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-logo" href="">
+              <svg class="icon" width="88.48" height="45.44">
+                <use href="./img/icomoon/sprite.svg#client-logo-6"></use>
+              </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -183,38 +344,65 @@
     </main>
 
     <!-- подвал-страницы -->
-    <footer class="footer">
+     <footer class="footer">
+
       <div class="container">
-        <a href="./index.html" class="logo-footer"
-          ><span class="logo-custom">Web</span>Studio</a
-        >
-        <address class="adress-footer">
-          <p>г. Киев, пр-т Леси Украинки, 26</p>
+        <!-- Секция Адрес -->
+        <section class="footer-adress">
+          <a href="./index.html" class="logo-footer"><span class="logo-custom">Web</span>Studio</a>
+          <address class="adress-footer">
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+          
+            <a href="mailto:info@example.com" class="email">info@example.com</a>
+          
+            <a href="tel:+380991111111" class="phone">+38 099 111 11 11</a>
+          </address>
+        </section>
 
-          <a href="mailto:info@example.com" class="email">info@example.com</a>
-
-          <a href="tel:+380991111111" class="phone">+38 099 111 11 11</a>
-        </address>
-      </div>
-    </footer>
-
-    <ul class="list">
-      <li> <button>
-        <svg>
-          <use href="./img/iconmoon/sprite.svg#facebook-icon"></use>
-        </svg>
-      </button></li>
-      <li> <button>
-        <svg>
-          <use href="./img/iconmoon/sprite.svg#facebook-icon"></use>
-        </svg>
-      </button></li>
-      <li> <button>
-        <svg>
-          <use href="./img/iconmoon/sprite.svg#facebook-icon"></use>
-        </svg>
-      </button></li>
-    </ul>
-
-  </body>
+        <!-- Секция соцсетей -->
+      <section class="footer-socials">
+        <b>присоединяйтесь</b>
+        
+        <!-- <ul class="list socials-list">
+          <li class="socials-item">
+            <a class="socials-url" href="http://instagram.com" target="_blank">
+            <svg class="icon instagram">
+              <use href="./img/icomoon/sprite.svg#instagram-icon"></use>
+            </svg></a></li>
+          <li class="socials-item">
+            <a class="socials-url" href="http://twitter.com" target="_blank">
+              <svg class="icon twitter">
+              <use href="./img/icomoon/sprite.svg#twitter-icon"></use>
+            </svg></a></li>
+          <li class="socials-item">
+            <a class="socials-url" href="http://facebook.com" target="_blank">
+              <svg class="icon facebook">
+              <use href="./img/icomoon/sprite.svg#facebook-icon"></use>
+            </svg></a></li>
+          <li class="socials-item">
+            <a class="socials-url" href="http://linkedin.com" target="_blank">
+              <svg class="icon linkedin">
+              <use href="./img/icomoon/sprite.svg#linkedin-icon"></use>
+            </svg></a></li>
+        </ul> -->
+      </section>
+    </div>
+   </footer>
+   <!-- +++++++++++TEST++++++++++++ -->
+   <section>
+     <ul class="actions">
+       <li><button class="but">
+         <svg class="but-icon">
+           <use href="./img/icomoon/sprite.svg#tel-icon"></use>
+         </svg>
+       </button></li>
+       <li><a href="" class="but">
+         <svg class="but-icon">
+           <use href="./img/icomoon/sprite.svg#instagram-icon"></use>
+         </svg>
+       </a></li>
+     </ul>
+   </section>
+   <!-- ============================ -->
+ </body>
 </html>

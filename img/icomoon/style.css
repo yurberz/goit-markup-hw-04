@@ -15,50 +15,50 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.client-1 {
-  width: 1.888671875em;
+.client-logo-1 {
+  width: 0.900390625em;
 }
 
-.client-2 {
-  width: 1.888671875em;
+.client-logo-2 {
+  width: 0.76953125em;
 }
 
-.client-3 {
-  width: 1.888671875em;
+.client-logo-3 {
+  width: 0.953125em;
 }
 
-.client-4 {
-  width: 1.888671875em;
+.client-logo-4 {
+  width: 1.8603515625em;
 }
 
-.client-5 {
-  width: 1.888671875em;
+.client-logo-5 {
+  width: 1.2548828125em;
 }
 
-.client-6 {
-  width: 1.888671875em;
+.client-logo-6 {
+  width: 1.9345703125em;
 }
 
-.envelope-icon {
+.email-icon {
   width: 1.3330078125em;
 }
 
-.feature-icon-1 {
+.feature-1 {
   width: 2.25em;
 }
 
-.feature-icon-2 {
+.feature-2 {
   width: 2.25em;
 }
 
-.feature-icon-3 {
+.feature-3 {
   width: 2.25em;
 }
 
-.feature-icon-4 {
+.feature-4 {
   width: 2.25em;
 }
 
-.smartphone-icon {
+.tel-icon {
   width: 0.625em;
 }
