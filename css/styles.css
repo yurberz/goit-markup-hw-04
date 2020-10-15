@@ -571,6 +571,7 @@ body {
 .filter {
   display: flex;
   justify-content: center;
+  height: 54px;
   margin-bottom: 34px;
 }
 
