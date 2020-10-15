@@ -195,8 +195,15 @@ body {
   color: var(--accent-color);
 }
 
+.email:focus .icon {
+  fill: var(--accent-color);
+}
 .phone:focus {
   color: var(--accent-color);
+}
+
+.phone:focus .icon {
+  fill: var(--accent-color);
 }
 
 /* Секция-герой */
@@ -406,7 +413,8 @@ body {
   color: #afb1b8;
 }
 
-.icon-button:hover {
+.icon-button:hover,
+.icon-button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
