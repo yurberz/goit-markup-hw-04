@@ -17,36 +17,37 @@
   <body>
     <!-- шапка-страницы -->
     <header class="page-header">
-      <div class="main-header container">
+      <div class="container top-line">
         <nav class="nav">
-          <a href="./index.html" class="logo" aria-label="логотип"><span class="logo-custom">Web</span>Studio</a>
-
+          <!-- логотип -->
+          <a href="./index.html" class="link logo " aria-label="логотип"><span class="logo-custom">Web</span>Studio</a>
+    
           <!-- навигация-сайта -->
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link studio-page">Студия</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="link portfolio-page current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="link current portfolio-page">Портфолио</a>
             </li>
             <li class="item">
               <a href="" class="link contacts-page">Контакты</a>
             </li>
           </ul>
         </nav>
-
+    
         <!-- телефон-електроннаяпочта -->
         <ul class="header-contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link email"
-              >info@devstudio.com</a
-            >
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="link email"><svg class="icon" width=16 height=12>
+                <use class="email-hover" href="./img/icomoon/sprite.svg#email-icon"></use>
+              </svg>info@devstudio.com</a>
           </li>
-
-          <li class="item">
-            <a href="tel:+380961111111" class="link phone">+38 096 111 11 11</a>
+    
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="link phone"><svg class="icon" width=10 height=16>
+                <use href="./img/icomoon/sprite.svg#tel-icon"></use>
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -191,29 +192,41 @@
       <div class="container">
         <!-- Секция Адрес -->
         <section class="footer-adress">
-          <a href="./index.html" class="logo-footer"><span class="logo-custom">Web</span>Studio</a>
+          <a href="./index.html" class="link logo-footer"><span class="logo-custom">Web</span>Studio</a>
           <address class="adress-footer">
             <p>г. Киев, пр-т Леси Украинки, 26</p>
     
-            <a href="mailto:info@example.com" class="email">info@example.com</a>
+            <a href="mailto:info@example.com" class="link email">info@example.com</a>
     
-            <a href="tel:+380991111111" class="phone">+38 099 111 11 11</a>
+            <a href="tel:+380991111111" class="link phone">+38 099 111 11 11</a>
           </address>
         </section>
     
         <!-- Секция соцсетей -->
         <section class="footer-socials">
           <b>присоединяйтесь</b>
-    
+        
           <ul class="list socials-list">
             <li class="socials-item">
-              <a href="http://instagram.com">Inst</a></li>
+              <a class="link socials-button" href="http://instagram.com" target="_blank">
+                <svg class="hover-logo" width=20 height=20>
+                  <use href="./img/icomoon/sprite.svg#instagram-icon"></use>
+                </svg></a></li>
             <li class="socials-item">
-              <a href="http://twitter.com">Twit</a></li>
+              <a class="link socials-button" href="http://twitter.com" target="_blank">
+                <svg class="hover-logo" width=20 height=20>
+                  <use href="./img/icomoon/sprite.svg#twitter-icon"></use>
+                </svg></a></li>
             <li class="socials-item">
-              <a href="http://facebook.com">Face</a></li>
+              <a class="link socials-button" href="http://facebook.com" target="_blank">
+                <svg class="hover-logo" width=20 height=20>
+                  <use href="./img/icomoon/sprite.svg#facebook-icon"></use>
+                </svg></a></li>
             <li class="socials-item">
-              <a href="http://linkedin.com">Link</a></li>
+              <a class="link socials-button" href="http://linkedin.com" target="_blank">
+                <svg class="hover-logo" width=20 height=20>
+                  <use href="./img/icomoon/sprite.svg#linkedin-icon"></use>
+                </svg></a></li>
           </ul>
         </section>
       </div>
